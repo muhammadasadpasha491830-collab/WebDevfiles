@@ -1,0 +1,253 @@
+/*   Name:    Muhammad Asad Pasha 
+     Roll No:    491830           */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --maroon: #7a1f2b;
+    --maroon-dark: #5c1620;
+    --paper: #fbfaf7;
+    --line: #d8d2c4;
+    --text: #2c2924;
+    --muted: #6e675b;
+}
+
+body {
+    margin: 0;
+    background: #ece7dd;
+    color: var(--text);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.sheet {
+    max-width: 760px;
+    margin: 40px auto 60px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 0 0 30px;
+}
+
+.letterhead {
+    border-bottom: 4px double var(--maroon);
+    padding: 26px 34px 20px;
+    text-align: center;
+}
+
+.eyebrow {
+    margin: 0 0 4px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.7rem;
+    color: var(--maroon);
+    font-weight: 600;
+}
+
+.letterhead h1 {
+    font-family: Georgia, 'Times New Roman', serif;
+    margin: 0 0 10px;
+    font-size: 1.7rem;
+    color: var(--text);
+}
+
+.letterhead .note {
+    margin: 0 auto;
+    max-width: 480px;
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.5;
+}
+
+.reg-form {
+    padding: 10px 34px 0;
+}
+
+fieldset {
+    border: none;
+    border-top: 1px solid var(--line);
+    padding: 20px 0 6px;
+    margin: 0;
+}
+
+fieldset:first-of-type {
+    border-top: none;
+}
+
+legend {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 1.05rem;
+    color: var(--maroon-dark);
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+.form-row {
+    margin-bottom: 16px;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-row label,
+.group-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 0.85rem;
+    color: var(--text);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="url"],
+select,
+textarea {
+    width: 100%;
+    padding: 9px 11px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    background: #fff;
+    color: var(--text);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--maroon);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 90px;
+}
+
+.inline-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+}
+
+.inline-options span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.inline-options label {
+    display: inline;
+    font-weight: 400;
+    margin: 0;
+    font-size: 0.88rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    accent-color: var(--maroon);
+    cursor: pointer;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: var(--maroon);
+}
+
+input[type="color"] {
+    width: 56px;
+    height: 36px;
+    padding: 2px;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+output {
+    font-weight: 700;
+    color: var(--maroon);
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+}
+
+.checkbox-row label {
+    margin: 0;
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+button {
+    padding: 11px 20px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background: var(--maroon);
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background: var(--maroon-dark);
+}
+
+button[type="reset"] {
+    background: transparent;
+    border-color: var(--line);
+    color: var(--text);
+}
+
+button[type="reset"]:hover {
+    background: #f0ece3;
+}
+
+.page-footer {
+    padding: 18px 34px 0;
+    text-align: right;
+    font-size: 0.72rem;
+    color: var(--muted);
+    font-style: italic;
+}
+
+@media (max-width: 560px) {
+    .sheet {
+        margin: 0;
+        border: none;
+    }
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+    .form-actions {
+        flex-direction: column;
+    }
+}
+/*   Name:    Muhammad Asad Pasha 
+     Roll No:    491830           */

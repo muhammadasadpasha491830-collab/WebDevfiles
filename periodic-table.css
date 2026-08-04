@@ -1,0 +1,200 @@
+/*  Name:    Muhammad Asad Pasha 
+    Roll No: 491830         */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --alkali-metal: #f2b6a0;
+    --alkaline-earth: #f4d58d;
+    --transition-metal: #a9c9dc;
+    --post-transition: #b7d3ae;
+    --metalloid: #cbb3d8;
+    --nonmetal: #9fd0c4;
+    --halogen: #efe08a;
+    --noble-gas: #e8a6a6;
+    --lanthanide: #c9c2b8;
+    --actinide: #c2b0a3;
+
+    --ink: #2b2620;
+    --paper: #faf6ee;
+    --line: #cbbfa9;
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.page {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 36px 24px 60px;
+}
+
+.page-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 3px double var(--ink);
+    padding-bottom: 18px;
+    margin-bottom: 28px;
+}
+
+.page-header h1 {
+    margin: 0 0 6px;
+    font-size: 1.9rem;
+    letter-spacing: 0.5px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-bottom: 34px;
+}
+
+.periodic-grid {
+    display: grid;
+    grid-template-columns: repeat(18, minmax(56px, 1fr));
+    grid-auto-rows: minmax(64px, auto);
+    gap: 2px;
+    min-width: 1050px;
+}
+
+.series-grid {
+    grid-template-columns: repeat(15, minmax(56px, 1fr));
+    min-width: 850px;
+}
+
+.series-title {
+    font-size: 1rem;
+    margin: 0 0 8px;
+    font-weight: normal;
+}
+
+.series-title span {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.8rem;
+    color: #7a7062;
+}
+
+.element {
+    background: #fff;
+    border: 1px solid var(--line);
+    padding: 3px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+.element:hover {
+    border: 2px solid var(--ink);
+    padding: 2px 4px;
+}
+
+.element .num {
+    font-size: 0.6rem;
+    color: #4a4238;
+}
+
+.element .sym {
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: #1c1712;
+    line-height: 1.15;
+}
+
+.element .name {
+    font-size: 0.58rem;
+    color: #4a4238;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.element .mass {
+    font-size: 0.58rem;
+    color: #6b6255;
+}
+
+.element.placeholder {
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(0,0,0,0.02),
+        rgba(0,0,0,0.02) 6px,
+        rgba(0,0,0,0.06) 6px,
+        rgba(0,0,0,0.06) 12px
+    );
+    border-style: dashed;
+}
+
+/* category colours */
+.alkali-metal      { background: var(--alkali-metal); }
+.alkaline-earth    { background: var(--alkaline-earth); }
+.transition-metal  { background: var(--transition-metal); }
+.post-transition   { background: var(--post-transition); }
+.metalloid         { background: var(--metalloid); }
+.nonmetal          { background: var(--nonmetal); }
+.halogen           { background: var(--halogen); }
+.noble-gas         { background: var(--noble-gas); }
+.lanthanide        { background: var(--lanthanide); }
+.actinide          { background: var(--actinide); }
+
+.legend {
+    border-top: 1px solid var(--line);
+    padding-top: 18px;
+    margin-top: 10px;
+}
+
+.legend h2 {
+    font-size: 1rem;
+    margin: 0 0 10px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.legend ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 24px;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.8rem;
+}
+
+.legend li {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.swatch {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border: 1px solid var(--line);
+}
+
+.page-footer {
+    margin-top: 40px;
+    text-align: right;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.75rem;
+    color: #8a7f6e;
+    font-style: italic;
+}
+
+@media (max-width: 700px) {
+    .page-header {
+        flex-direction: column;
+    }
+    .element .name {
+        display: none;
+    }
+}

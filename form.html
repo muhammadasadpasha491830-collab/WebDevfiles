@@ -1,0 +1,142 @@
+<!-- Name:    Muhammad Asad Pasha 
+     Roll No: 491830        -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<meta name="description" content="Student registration form for intermediate college admission.">
+<link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+<div class="sheet">
+
+    <header class="letterhead">
+        <p class="eyebrow">Intermediate College &middot; Admissions Office</p>
+        <h1>Student Registration Form</h1>
+        <p class="note">Please fill in all fields marked required. Double-check your roll number and CNIC/B-Form details before submitting &mdash; corrections after submission require a visit to the admissions desk.</p>
+    </header>
+
+<form class="reg-form" action="#" method="POST" novalidate>
+
+    <fieldset>
+        <legend>1. Personal Information</legend>
+
+        <div class="form-row">
+            <label for="fullname">Full Name (as per CNIC / B-Form)</label>
+            <input type="text" id="fullname" name="fullname" placeholder="e.g. Asaad Pasha" minlength="3" maxlength="60" required>
+        </div>
+
+        <div class="form-row two-col">
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="03XX-XXXXXXX">
+            </div>
+        </div>
+
+        <div class="form-row two-col">
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div>
+                <label for="password">Portal Password</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+            </div>
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>2. Academic Details</legend>
+
+        <div class="form-row two-col">
+            <div>
+                <label for="rollno">Roll Number</label>
+                <input type="number" id="rollno" name="rollno" min="1" max="9999" step="1">
+            </div>
+            <div>
+                <label for="major">Intended Stream</label>
+                <select id="major" name="major" required>
+                    <optgroup label="Science">
+                        <option value="pre-engineering">Pre-Engineering</option>
+                        <option value="pre-medical">Pre-Medical</option>
+                        <option value="computer-science">Computer Science</option>
+                    </optgroup>
+                    <optgroup label="Other">
+                        <option value="commerce">Commerce</option>
+                        <option value="arts">Arts / Humanities</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <p class="group-label">Gender</p>
+            <div class="inline-options">
+                <span><input type="radio" id="male" name="gender" value="male"><label for="male">Male</label></span>
+                <span><input type="radio" id="female" name="gender" value="female"><label for="female">Female</label></span>
+                <span><input type="radio" id="other-gender" name="gender" value="other"><label for="other-gender">Prefer not to say</label></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <p class="group-label">Subjects Enrolled</p>
+            <div class="inline-options">
+                <span><input type="checkbox" id="subject1" name="subjects" value="physics"><label for="subject1">Physics</label></span>
+                <span><input type="checkbox" id="subject1" name="subjects" value="maths"><label for="subject1">Maths</label></span>
+                <span><input type="checkbox" id="sub-cs" name="subjects" value="cs"><label for="sub-cs">Computer Science</label></span>
+                <span><input type="checkbox" id="sub-eng" name="subjects" value="english"><label for="sub-eng">English</label></span>
+            </div>
+        </div>
+
+      
+    </fieldset>
+
+    <fieldset>
+        <legend>3. Additional Information</legend>
+
+        <div class="form-row two-col">
+            <div>
+                <label for="favcolor">ID Card Accent Colour</label>
+                <input type="color" id="favcolor" name="favcolor" value="#7a1f2b">
+             </div>
+        </div>     
+
+        <div class="form-row">
+            <label for="website">Portfolio / GitHub (optional)</label>
+            <input type="url" id="website" name="website" placeholder="https://your-site.com">
+        </div>
+
+        <div class="form-row">
+            <label for="message">Why do you want to join this program?</label>
+            <textarea id="message" name="message" rows="5" placeholder="A few honest sentences are fine, this isn't an essay competition."></textarea>
+        </div>
+    </fieldset>
+
+    <div class="form-row checkbox-row">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I confirm the above details are correct and I agree to the college's terms and conditions.</label>
+    </div>
+
+    <div class="form-actions">
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Clear Form</button>
+    </div>
+
+</form>
+
+    <footer class="page-footer">
+        <p>Built by M.Asaad Pasha. Roll No. 491830 </p>
+    </footer>
+
+</div>
+<!-- Name:    Muhammad Asad Pasha 
+     Roll No: 491830        -->
+</body>
+</html>
