@@ -1,0 +1,104 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.box {
+  border: 3px solid #ffffff;
+}
+
+/* Header row takes small share of page height */
+.header-row {
+  flex-grow: 1;
+}
+
+/* Middle rows take bigger share */
+.row1 {
+  flex-grow: 3;
+}
+
+.row2 {
+  flex-grow: 3;
+}
+
+/* Footer row takes small share */
+.footer-row {
+  flex-grow: 1;
+}
+
+/* Header boxes - each written separately */
+.hbox1 {
+  flex-grow: 1;
+  background-color: #1abc9c;
+}
+
+.hbox2 {
+  flex-grow: 1;
+  background-color: #1abc9c;
+}
+
+.hbox3 {
+  flex-grow: 1;
+  background-color: #1abc9c;
+}
+
+/* Row 1 boxes - each written separately */
+.box1 {
+  flex-grow: 1;
+  background-color: #0c8f58;
+}
+
+.box2 {
+  flex-grow: 3;
+  background-color:  #0c8f58;
+}
+
+.box3 {
+  flex-grow: 3;
+  background-color:  #0c8f58;
+}
+
+/* Row 2 boxes - each written separately */
+.box4 {
+  flex-grow: 3;
+  background-color: #1edf2e;
+}
+
+.box5 {
+  flex-grow: 1;
+  background-color: #1edf2e;
+}
+
+.box6 {
+  flex-grow: 1;
+  background-color: #1edf2e;
+}
+
+/* Footer boxes - each written separately */
+.fbox1 {
+  flex-grow: 1;
+  background-color: #e67e22;
+}
+
+.fbox2 {
+  flex-grow: 1;
+  background-color: #e67e22;
+}
+
+.fbox3 {
+  flex-grow: 1;
+  background-color: #e67e22;
+}
